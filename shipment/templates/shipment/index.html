@@ -1,0 +1,8 @@
+<h1>Last ten letters:</h1>
+<ul class="list-inline">
+{% for letter in last %}
+  <li class="list-inline-item">
+    <span class="badge badge-info">Sender: {{ letter.sender }}; Seconds to be published: {{ letter.postdate }}; Status: {{ letter.status }}</span>
+  </li>
+{% endfor %}
+</ul>
